@@ -52,6 +52,46 @@ body {
   background: #334652;
 }
 
+.input__checklist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.input__checklist-items input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.input__checklist-items input + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.input__checklist-items input + label::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  bottom: 0;
+  border: solid 2px;
+}
+
+.input__checklist-items input:checked + label::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 10px;
+  height: 20px;
+  border-right: solid 3px green;
+  border-bottom: solid 3px green;
+  transform: rotate(45deg);
+}
 .button {
   margin: 10px 0;
   width: 50%;
