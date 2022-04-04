@@ -21,27 +21,29 @@
             max="30"
             value="15"
           />
+          <div class="input__checklist-container">
+            <ul class="input__checklist">
+              <li class="input__checklist-items">
+                <input id="alphabet" type="checkbox" />
+                <label for="alphabet"> a-z </label>
+              </li>
 
-          <div class="input__checklist">
-            <div class="input__checklist-items">
-              <input id="alphabet" type="checkbox" />
-              <label for="alphabet"> a-z </label>
-            </div>
+              <li class="input__checklist-items">
+                <input type="checkbox" id="uppercaseAlphabet" />
+                <label for="uppercaseAlphabet">A-Z</label>
+              </li>
+            </ul>
+            <ul class="input__checklist">
+              <li class="input__checklist-items">
+                <input type="checkbox" id="numbers" />
+                <label for="numbers">0-9</label>
+              </li>
 
-            <!-- <div class="input__checklist-items">
-              <span>A-Z</span>
-              <input type="checkbox" id="uppercaseAlphabet" />
-            </div>
-
-            <div class="input__checklist-items">
-              <span>0-9</span>
-              <input type="checkbox" id="numbers" />
-            </div>
-
-            <div class="input__checklist-items">
-              <span>Caracteres Especiais</span>
-              <input type="checkbox" id="specialCharacters" />
-            </div> -->
+              <li class="input__checklist-items">
+                <input type="checkbox" id="specialCharacters" />
+                <label for="specialCharacters">Caracteres Especiais</label>
+              </li>
+            </ul>
           </div>
 
           <button id="button" class="button" onclick="generatePassword()">
